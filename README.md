@@ -18,11 +18,11 @@
 
 - [paddlenlp](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/model_zoo/taskflow.md#%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D)
 
-- jieba
+- [jieba](https://github.com/fxsjy/jieba)
 
-- hanlp
+- [HanLP](https://github.com/hankcs/HanLP)
 
-- jionlp
+- [JioNLP](https://github.com/dongrixinyu/JioNLP)
 
   
 
@@ -30,7 +30,7 @@
 
 ## 免责声明
 
-本仓库为非盈利仓库，版权归属原作者，对任何法律问题及风险不承担任何责任。
+本仓库为非盈利仓库，对任何法律问题及风险不承担任何责任。
 
 本仓库没有任何商业目的，如果认为侵犯了您的版权，请来信告知。
 
@@ -38,25 +38,53 @@
 
 
 
-## 部署
+## 本地部署
 
-### 1. 克隆项目
+1. 克隆项目
 
 ```bash
 git clone https://github.com/sanmaomashi/word_seg_service.git
 ```
 
-### 2. 安装依赖
+2. 安装依赖
 
 ```bash
 pip install -r requirements -i https://mirror.baidu.com/pypi/simple
 ```
 
-### 3. 执行项目
+3. 执行项目
 
 ```bash
 cd /项目目录/bin
 bash start_project.sh
+```
+
+4. 访问swagger ui
+
+```http
+http://{{ip}}:1701/api/docs
+```
+
+
+
+## docker部署
+
+构建镜像
+
+```bash
+docker build -t nlp:word_seg .
+```
+
+启动容器
+
+```bash
+docker run -d --name word_seg -p 1701:1701 --restart=always nlp:word_seg
+```
+
+访问swagger ui
+
+```http
+http://{{ip}}:1701/api/docs
 ```
 
 
