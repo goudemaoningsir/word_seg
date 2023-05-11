@@ -12,7 +12,7 @@
 
 ## 简介
 
-自然语言处理 分词服务
+自然语言处理 分词服务 基于fastapi实现
 
 包括以下开源组件的实现：
 
@@ -62,10 +62,10 @@ bash start_project.sh
 4. 访问swagger ui
 
 ```http
-http://{{ip}}:1701/api/docs
+http://{{ip}}:1701/docs
 ```
 
-
+![](https://raw.githubusercontent.com/sanmaomashi/word_seg_service/main/img/2.swagger.png)
 
 ## docker部署
 
@@ -84,8 +84,10 @@ docker run -d --name word_seg -p 1701:1701 --restart=always nlp:word_seg
 访问swagger ui
 
 ```http
-http://{{ip}}:1701/api/docs
+http://{{ip}}:1701/docs
 ```
+
+![](https://raw.githubusercontent.com/sanmaomashi/word_seg_service/main/img/2.swagger.png)
 
 
 
