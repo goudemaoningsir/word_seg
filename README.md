@@ -16,7 +16,7 @@
 
 包括以下开源组件的实现：
 
-- [paddlenlp](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/model_zoo/taskflow.md#%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D)
+- [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/model_zoo/taskflow.md#%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D)
 
 - [jieba](https://github.com/fxsjy/jieba)
 
