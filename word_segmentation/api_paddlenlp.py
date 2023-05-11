@@ -19,7 +19,7 @@ from utils.common_util import cost_time, logger
 
 SUMMARY = "中文分词"
 
-POST_DESCRIPTION = ("分词处理API - bd\n\n\n"
+POST_DESCRIPTION = ("分词处理API - paddlenlp\n\n\n"
                     "本API接受一个包含文本数据的对象，进行分词处理。用户可以选择上传一个自定义词典文件，覆盖预设的分词词典。\n")
 
 DATA_DESCRIPTION = "文本分词任务的输入数据，至少包含一个文本的列表，列表中至少包含'text'字段。\n"
