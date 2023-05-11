@@ -14,6 +14,7 @@ from fastapi.openapi.docs import (
     get_swagger_ui_oauth2_redirect_html
 )
 from word_segmentation.api_paddlenlp import seg_router
+from word_segmentation.api_jieba import jieba_router
 
 ROOT_PATH = Path(__file__).parent
 
@@ -55,6 +56,8 @@ async def redoc_html():
 
 
 app.include_router(seg_router, prefix="/word_segmentation", tags=["paddlenlp"])
+
+app.include_router(jieba_router, prefix="/word_segmentation", tags=["jieba"])
 
 
 if __name__ == "__main__":
