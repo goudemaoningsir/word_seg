@@ -12,9 +12,9 @@
 
 ## 简介
 
-自然语言处理 分词服务 基于fastapi实现
+自然语言处理 分词服务
 
-包括以下开源组件的实现：
+基于以下开源组件的 fastapi 实现：
 
 - [PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/model_zoo/taskflow.md#%E4%B8%AD%E6%96%87%E5%88%86%E8%AF%8D)
 
